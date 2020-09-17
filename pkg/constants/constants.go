@@ -203,7 +203,7 @@ func ServiceURL(name string, hostName string) string {
 }
 
 func PredictPrefix(name string) string {
-	return fmt.Sprintf("/v1/models/%s:predict", name)
+	return fmt.Sprintf("/v1/models/%s", name)
 }
 
 func ExplainPrefix(name string) string {
